@@ -301,8 +301,6 @@ namespace CharmOverhaul
 
             On.HealthManager.TakeDamage += OnHMTakeDamage;
 
-            On.NailSlash.SetFury += OnSetFury;
-
             On.PlayMakerFSM.OnEnable += OnFSMEnable;
 
             On.HutongGames.PlayMaker.Actions.SetPlayerDataInt.OnEnter += OnSetPlayerDataIntAction;
