@@ -1,4 +1,27 @@
-﻿# CharmOverhaul
+﻿# CharmOverhaul (Natsumi's Style)
+
+Forked from Exempt-Medic's port of Charm Overhaul.
+
+## Changes compared to the fork
+
+**Single Charms:**
+* Reduces the cost of Gathering Swarm, Quick Slash, and Flukenest by 1.
+
+**Charm Combos:**
+
+Blazing Speed is removed.
+* There are some bugs that can really affect movement. Due to this, it is best to remove them till either I learn how to fix it OR Medic themselves fix it.
+
+Buffed Doom Desire's Geo gain from 20% to 25%.
+* While the buff sounds hefty, I feel like this would be better to work with.
+
+Buffed Balanced Blow's parry invulnerability time from 0.15s to 0.2s.
+* Feels underwhelming to have a small impact with a charm combo.
+
+
+* 
+
+# ORIGINAL DESCRIPTION. 
 
 Personal attempt to port the Charm Overhaul mod to 1.5. Coded almost entirely from scratch, following the information found in [this Steam discussion post](https://steamcommunity.com/app/367520/discussions/0/1732089092462513717/).
 
@@ -74,7 +97,7 @@ Umbral Vision (Sharp Shadow + Sprintmaster):
 * Shade Cloak has 0.25s more i-frames
 
 Vengeful Melody (Carefree Melody + Fury of the Fallen):
-* 1% chance to crit for 1.25* damage with Nail strikes whil Fury is **not** active. Chance increases for each missing Mask
+* 1% chance to crit for 1.25* damage with Nail strikes while Fury is **not** active. Chance increases for each missing Mask
 
 Void Twister (Voidheart + Spell Twister):
 * Reduces cost of upgraded Spells by an additional 2
