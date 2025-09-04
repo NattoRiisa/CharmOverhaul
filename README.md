@@ -15,9 +15,6 @@ Blazing Speed is removed.
 Buffed Doom Desire's Geo gain from 20% to 25%.
 * While the buff sounds hefty, I feel like this would be better to work with.
 
-Buffed Balanced Blow's parry invulnerability time from 0.15s to 0.2s.
-* Feels underwhelming to have a small impact with a charm combo.
-
 # ORIGINAL DESCRIPTION. 
 
 Personal attempt to port the Charm Overhaul mod to 1.5. Coded almost entirely from scratch, following the information found in [this Steam discussion post](https://steamcommunity.com/app/367520/discussions/0/1732089092462513717/).
