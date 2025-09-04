@@ -462,7 +462,7 @@ namespace CharmOverhaul
             // Greed + Fury of the Fallen Geo
             if (LS.DoomDesire && hitInstance.AttackType == AttackTypes.Nail && PlayerDataAccess.equippedCharm_6 && PlayerDataAccess.equippedCharm_24 && !PlayerDataAccess.brokenCharm_24)
             {
-                HeroController.instance.AddGeo((int)(hitInstance.DamageDealt * hitInstance.Multiplier * 0.2f));
+                HeroController.instance.AddGeo((int)(hitInstance.DamageDealt * hitInstance.Multiplier * 0.25f));
             }
 
             orig(self, hitInstance);
@@ -920,6 +920,9 @@ namespace CharmOverhaul
             PlayerData.instance.SetInt("charmCost_34", 3);
             PlayerData.instance.SetInt("charmCost_38", 2);
             PlayerData.instance.SetInt("charmCost_40", 2);
+            PlayerData.instance.SetInt("charmCost_32", 2);
+            PlayerData.instance.SetInt("charmCost_11", 2);
+            PlayerData.instance.SetInt("charmCost_01", 2);
         }
 
         // Avaricious Swarm
