@@ -291,7 +291,7 @@ namespace CharmOverhaul
         public override void Initialize()
         {
             Log("Initializing");
-
+            
             On.HeroController.Awake += OnHCAwake;
             On.HeroController.CharmUpdate += OnCharmUpdate;
             On.HeroController.TakeDamage += OnHCTakeDamage;
@@ -309,6 +309,7 @@ namespace CharmOverhaul
             On.HutongGames.PlayMaker.Actions.SendMessageV2.DoSendMessage += OnSendMessageV2Action;
             On.HutongGames.PlayMaker.Actions.Wait.OnEnter += OnWaitAction;
             On.HutongGames.PlayMaker.Actions.SpawnObjectFromGlobalPoolOverTime.OnUpdate += OnSpawnObjectFromGlobalPoolOverTimeAction;
+            On.HutongGames.PlayMaker.Actions.IntCompare.OnEnter += FotFHPRequirements;
 
             ModHooks.GetPlayerIntHook += OnGetPlayerIntHook;
             ModHooks.HeroUpdateHook += OnHeroUpdateHook;
@@ -336,11 +337,8 @@ namespace CharmOverhaul
         }
         #endregion
         
-        #region Fury of the Fallen Init
-        On.HutongGames.PlayMaker.Actions.IntCompare.OnEnter += FotFHPRequirements;
-        #endregion
-        
         #region Changes
+
 
         private void FotFHPRequirements(On.HutongGames.PlayMaker.Actions.IntCompare.orig_OnEnter orig, IntCompare self)
         {
