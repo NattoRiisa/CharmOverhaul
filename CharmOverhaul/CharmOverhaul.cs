@@ -355,6 +355,7 @@ namespace CharmOverhaul
                     self.lessThan = FsmEvent.GetFsmEvent("RETURN");
                 }
             }
+        }
             
         // Glowing Womb Buffs
         private void OnHatchlingEnable(On.KnightHatchling.orig_OnEnable orig, KnightHatchling self)
