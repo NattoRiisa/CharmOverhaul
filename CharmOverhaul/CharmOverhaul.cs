@@ -46,16 +46,16 @@ namespace CharmOverhaul
                     () => CharmOverhaulMod.LS.BalancedBlow
                  ),
 
-                //Blueprints.HorizontalBoolOption
-                //(
-                //    "Blazing Speed",
-                //    "Fury of the Fallen + Sprintmaster",
-                //    (b) =>
-                //    {
-                //        CharmOverhaulMod.LS.BlazingSpeed = b;
-                //    },
-                //    () => CharmOverhaulMod.LS.BlazingSpeed
-                // ),
+                Blueprints.HorizontalBoolOption
+                (
+                    "Blazing Speed",
+                    "Fury of the Fallen + Sprintmaster",
+                    (b) =>
+                    {
+                        CharmOverhaulMod.LS.BlazingSpeed = b;
+                    },
+                    () => CharmOverhaulMod.LS.BlazingSpeed
+                 ),
 
                 Blueprints.HorizontalBoolOption
                 (
@@ -1001,7 +1001,7 @@ namespace CharmOverhaul
     {
         public bool AvariciousSwarm = true;
         public bool BalancedBlow = true;
-        //public bool BlazingSpeed = true;
+        public bool BlazingSpeed = true;
         public bool BurningOdor = true;
         public bool DepravedWomb = true;
         public bool DoomDesire = true;
