@@ -335,8 +335,29 @@ namespace CharmOverhaul
             Log("Initialized");
         }
         #endregion
-
+        
+        #region Fury of the Fallen Init
+        On.HutongGames.PlayMaker.Actions.IntCompare.OnEnter += FotFHPRequirements;
+        #endregion
+        
         #region Changes
+
+        private void FotFHPRequirements(On.HutongGames.PlayMaker.Actions.IntCompare.orig_OnEnter orig, IntCompare self)
+        {
+            if (self.Fsm.GameObject.name == "Charm Effects" && self.Fsm.Name == "Fury")
+            {
+                if (self.State.Name == "Check HP")
+                {
+                    self.integer2 = 2;
+                    self.lessThan = FsmEvent.GetFsmEvent("FURY");
+                }
+                else if (self.State.Name == "Recheck")
+                {
+                    self.integer2 = 2;
+                    self.lessThan = FsmEvent.GetFsmEvent("RETURN");
+                }
+            }
+            
         // Glowing Womb Buffs
         private void OnHatchlingEnable(On.KnightHatchling.orig_OnEnable orig, KnightHatchling self)
         {
