@@ -445,18 +445,6 @@ namespace CharmOverhaul
             orig(self);
         }
 
-        // Fury of the Fallen + Sprintmaster Speed Boost
-        private void OnSetFury(On.NailSlash.orig_SetFury orig, NailSlash self, bool set)
-        {
-            if (PlayerDataAccess.equippedCharm_37)
-            {
-                HeroController.instance.RUN_SPEED_CH += set ? 2f : -2f;
-                HeroController.instance.RUN_SPEED_CH_COMBO += set ? 2f : -2f;
-            }
-
-            orig(self, set);
-        }
-
         // Sharp Shadow + Sprintmaster i-frames
         private void OnCancelDash(On.HeroController.orig_CancelDash orig, HeroController self)
         {
